@@ -6,28 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
         <!-- Page title -->
         <title>Eliza Chatbot</title>
+
     </head>
 
     <body>
-        <h1>Welcome to the Eliza Chatbot</h1>       
-        <a href="/index/">Chat with eliza</a>
+  
+        <h1>Welcome to the Eliza Chatbot</h1>
         
-        <form action="/chat/" method="get">
-            <input type = "text" name="userMessage">
-            <input type = "submit" value = "Chat">
-        </form>
+        <div class="fixed-bottom bg-dark p-2">
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="userInput" placeholder="Talk to eliza...">
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!-- Code adapted from: https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template -->
-        <script>
-            src="/js/jquery-3.2.1.slim.min.js"
-            src="/js/popper.js/1.11.0/umd/popper.min.js"
-            src="/js/bootstrap.min.js"
-        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </body>
 </html>
