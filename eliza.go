@@ -2,7 +2,7 @@ package main
 //Code: https://getbootstrap.com/docs/4.0/components/forms/
 import (
 	"net/http"
-	"text/template"
+	//"text/template"
 	//"math/rand"
 	//"time"
 )
@@ -18,16 +18,10 @@ type tempData struct {
 }
 
 func indexHTML(w http.ResponseWriter, r * http.Request){
-	http.ServeFile(w, r, "src/index.html")
-
-	tmpl, err := template.ParseFiles("src/index.html")
-	tmpl.Execute(w, tempData{Eliza: "Hi"})
-
-	checkError(err)
+	http.ServeFile(w, r, "src/index.html")	
 }
 
 func main() {
-
 	http.HandleFunc("/", indexHTML)
 	//http.HandleFunc("/chat/", chatHandler)
 
