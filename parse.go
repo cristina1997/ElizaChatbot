@@ -16,6 +16,6 @@ func chatHandler(w http.ResponseWriter, r * http.Request) {
 	checkError(err)
 
 	chat := r.FormValue("input") // parse form name="input" from user
-	Ask(w, chat)
+	Ask(chat)
 } // chatHandler
 

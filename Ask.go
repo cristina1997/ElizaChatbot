@@ -5,6 +5,12 @@ import (
 	"fmt"
 )
 
-func Ask(w http.ResponseWriter,chat string){
-	fmt.Fprintf(w, " %s", chat);
+func Ask(chat string) string {
+	//fmt.Fprintf(w, " %s", chat);
+
+	/*answers := answersList()
+
+	for _, answ range answers{
+		
+	}*/
 } // Output
