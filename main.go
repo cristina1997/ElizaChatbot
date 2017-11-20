@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 	"fmt"
+	"./eliza"
 )
 
 func main() {
@@ -14,14 +15,8 @@ func main() {
 
 func chatHandler(w http.ResponseWriter, r * http.Request) {
 	userInput := r.URL.Query().Get("input")
-	elizaResponse := eliza.Ask(userInput)
+	elizaResponse := eliza.ElizaHi(userInput)
 
-	for {
-        statement := userInput()
-        fmt.Println("Eliza: " + eliza.ReplyTo(statement))
+	fmt.Fprintf(w, elizaResponse);
 
-        if eliza.IsQuitStatement(statement) {
-            break
-        }
-    }
 } // chatHandler
