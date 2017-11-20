@@ -17,11 +17,11 @@ import (
 // }
 
 func ElizaHi(statement string) string{
-    if IsStartStatement(statement) {
+    // if IsStartStatement(statement) {
         return random(Greetings)
-    }        
-        
-    return "Hello to you too." 
+    // }        
+
+    // return "Hello to you too." 
         
 }
 
@@ -49,6 +49,6 @@ func trim(statement string) string {
 } // trim
 
 func random(list []string) string {
-    randomNumber := rand.Intn(len(list))
+    randomNumber := rand.Intn(len(list)) // returns a random index number related to whatever the array number from the array list
     return list[randomNumber]
 }
