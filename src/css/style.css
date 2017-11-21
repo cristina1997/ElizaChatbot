@@ -2,6 +2,16 @@ h1 {
     text-align: center;
 }
 
-form input {
-    width: auto;
+.right {
+    float: right;
+    background-color:lightblue;
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+    background-color:white;
+    clear: both;
+    display: block;
 }

@@ -16,16 +16,15 @@ import (
 //         panic(e)
 // }
 
-func ElizaHi(statement string) string{
-    // if IsStartStatement(statement) {
-        return random(Greetings)
-    // }        
-
-    // return "Hello to you too." 
-        
+func ElizaHi() string{
+    return random(Greetings)        
 }
 
-func Ask(chat string) string {
+func ElizaBye() string{
+    return random(Valediction)        
+}
+
+func Ask(statement string) string {
 	//responses := responseList()
 
 	return ""
@@ -36,6 +35,16 @@ func IsStartStatement(statement string) bool {
     statement = trim(statement)
     for _, startStatement := range StartStatements {
         if statement == startStatement {
+            return true
+        }
+    }
+    return false
+} // IsStartStatement
+
+func IsEndStatement(statement string) bool {
+    statement = trim(statement)
+    for _, endStatement := range EndStatements {
+        if statement == endStatement {
             return true
         }
     }
