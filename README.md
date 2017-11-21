@@ -8,7 +8,7 @@ More information in relation to the Overview and Instructions of this project ca
 First and foremost, you will need to install [Go](https://golang.org/dl/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (if not already installed).
 
 1. Clone Repo
-> git clone https://github.com/cristina1997/ElizaChatbot
+```> git clone https://github.com/cristina1997/ElizaChatbot```
 
 2. Command Prompt
 >
