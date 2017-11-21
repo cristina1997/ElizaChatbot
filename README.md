@@ -13,15 +13,15 @@ First and foremost, you will need to install [Go](https://golang.org/dl/) and [G
 
 2. Command Prompt
 
-&nbsp;&nbsp;&nbsp;&nbsp;```>```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```>```
 
 3. Compile
 
-&nbsp;&nbsp;&nbsp;&nbsp;```> ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> ```
 
 4. Run
 
-&nbsp;&nbsp;&nbsp;&nbsp;```> ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> ```
 
 
 
