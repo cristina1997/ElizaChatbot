@@ -9,7 +9,7 @@ First and foremost, you will need to install [Go](https://golang.org/dl/) and [G
 
 1. Clone Repo
 
-```> git clone https://github.com/cristina1997/ElizaChatbot```
+```⋅⋅⋅> git clone https://github.com/cristina1997/ElizaChatbot```
 
 2. Command Prompt
 >
