@@ -12,7 +12,7 @@ First and foremost, you will need to install [Go](https://golang.org/dl/) and [G
 ...```> git clone https://github.com/cristina1997/ElizaChatbot```
 
 2. Command Prompt
-...Hi
+-Hi
 
 3. Compile
 ... ```> ```
