@@ -3,41 +3,41 @@ package eliza
 var Greetings = []string{
 	"Hello. How are you feeling today?",
 	"Hello. How are you?",
-    "Hello. How do you do.",
-    "Hi there. Pleased to meet you.",
+	"Hello. How do you do.",
+	"Hi there. Pleased to meet you.",
 	"Is something troubling you?",
 	"Hi there",
 }
 
 var Valediction = []string{
-    "Goodbye. It was nice talking to you.",
-    "Thank you for talking with me.",
-    "Thank you, that will be $150. Have a good day!",
-    "Goodbye. This was really a nice talk.",
-    "Goodbye. I'm looking forward to our next session.",
-    "This was a good session, wasn't it – but time is over now. Goodbye.",
-    "Maybe we could discuss this over more in our next session? Goodbye.",
-    "Good-bye.",
+	"Goodbye. It was nice talking to you.",
+	"Thank you for talking with me.",
+	"Thank you, that will be $150. Have a good day!",
+	"Goodbye. This was really a nice talk.",
+	"Goodbye. I'm looking forward to our next session.",
+	"This was a good session, wasn't it – but time is over now. Goodbye.",
+	"Maybe we could discuss this over more in our next session? Goodbye.",
+	"Good-bye.",
 }
 
 var EndStatements = []string{
-    "goodbye",
-    "bye",
-    "quit",
-    "exit",
-    "cya",
-    "see you",
+	"goodbye",
+	"bye",
+	"quit",
+	"exit",
+	"cya",
+	"see you",
 }
 
 var StartStatements = []string{
-    "hi",
-    "hello",
+	"hi",
+	"hello",
 	"heya",
 	"hey",
-    "heyo",
-    "hello there",
-    "hi there",
-    "how are you",
+	"heyo",
+	"hello there",
+	"hi there",
+	"how are you",
 }
 
 var Responses = map[string][]string{
@@ -568,73 +568,73 @@ var Default = []string{
 }
 
 var Reflected = map[string]string{    
-    // Synonyms
-    "\bi\b": "I",
-    "[Ii]'m": "[Ii] am",
-    "you're": "you are",
-    "[Ii]'ll": "[Ii] will",    
-    "you'll": "you will",    
-    "[Ii]'d": "[Ii] would",    
-    "you'd": "you would",    
-    "[Ii]'ve": "[Ii] have",
-    "you've": "you have",    
-    "[Ii]'ve had": "[Ii] have had",
-    "cant": "can't",
-    "dont": "don't",
-    "wont": "won't",
-    "couldnt": "couldn't",
-    "didnt": "didn't",
-    "wouldnt": "wouldn't",
+	// Synonyms
+	"\bi\b": "I",
+	"[Ii]'m": "[Ii] am",
+	"you're": "you are",
+	"[Ii]'ll": "[Ii] will",    
+	"you'll": "you will",    
+	"[Ii]'d": "[Ii] would",    
+	"you'd": "you would",    
+	"[Ii]'ve": "[Ii] have",
+	"you've": "you have",    
+	"[Ii]'ve had": "[Ii] have had",
+	"cant": "can't",
+	"dont": "don't",
+	"wont": "won't",
+	"couldnt": "couldn't",
+	"didnt": "didn't",
+	"wouldnt": "wouldn't",
 
-    // Subject Pronouns
-    "[Ii]": "you",
-    "he": "she",
-    "she": "he",
+	// Subject Pronouns
+	"[Ii]": "you",
+	"he": "she",
+	"she": "he",
 
-    // Object Pronouns
-    "you": "me",
-    "me": "you",
-    "him": "her",
-    "her": "him",
+	// Object Pronouns
+	"you": "me",
+	"me": "you",
+	"him": "her",
+	"her": "him",
 
-    // Possesive Adjectives
-    "your": "my",
-    "my": "your",
+	// Possesive Adjectives
+	"your": "my",
+	"my": "your",
 
-    // Possesive Pronouns
-    "yours": "mine",
-    "mine": "yours",
-    "his": "hers",
-    "hers": "his",
+	// Possesive Pronouns
+	"yours": "mine",
+	"mine": "yours",
+	"his": "hers",
+	"hers": "his",
 
-    // Reflexive Pronouns
-    "yourself": "myself",
-    "myself": "yourself",
-    "himself": "herself",
-    "herself": "himself",
+	// Reflexive Pronouns
+	"yourself": "myself",
+	"myself": "yourself",
+	"himself": "herself",
+	"herself": "himself",
 
-    // To be
-        // Present
-    "am": "are", 
-    "are": "am", 
-        // Past
-    "was": "were",    
-    
-    // To Will
-        // Present    
-    "[Ii] will": "you will",
-    "you will": "I will",
-        // Past
-    "[Ii] would": "you would",
-    "you' would": "I would",
+	// To be
+		// Present
+	"am": "are", 
+	"are": "am", 
+		// Past
+	"was": "were",    
+
+	// To Will
+		// Present    
+	"[Ii] will": "you will",
+	"you will": "I will",
+		// Past
+	"[Ii] would": "you would",
+	"you' would": "I would",
 
 
-    // To Have
-        // Present
-    "[Ii] have": "you have",
-    "you have": "I have",
-        // Past
-    "[Ii] have had": "you've had",    
+	// To Have
+		// Present
+	"[Ii] have": "you have",
+	"you have": "I have",
+		// Past
+	"[Ii] have had": "you've had",    
 
-    
+
 }
