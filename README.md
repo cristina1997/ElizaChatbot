@@ -9,7 +9,8 @@ First and foremost, you will need to install [Go](https://golang.org/dl/) and [G
 
 1. Clone Repo
 
-Open your terminal in the folder you wish to download the repository and execute the following: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Open your terminal in the folder you wish to download the repository and execute the following:**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> git clone https://github.com/cristina1997/ElizaChatbot```
 
 2. Command Prompt
