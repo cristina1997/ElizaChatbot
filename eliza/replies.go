@@ -42,7 +42,7 @@ var StartStatements = []string{
 
 var Responses = map[string][]string{
    
-    `[Hh]i there (.*)`: {
+    `Hi there (.*)`: {
         "Hello... I'm glad you could drop by today.",
         "Hi there... how are you today?",
         "Hello, how are you feeling today?",
@@ -53,7 +53,7 @@ var Responses = map[string][]string{
         "Is something troubling you?",
         "Hi there",
     },
-    `[Hh]ello there (.*)`: {
+    `Hello there (.*)`: {
         "Hello... I'm glad you could drop by today.",
         "Hi there... how are you today?",
         "Hello, how are you feeling today?",
@@ -64,7 +64,7 @@ var Responses = map[string][]string{
         "Is something troubling you?",
         "Hi there",
     },
-    `[Hh]ello (.*)`: {
+    `Hello (.*)`: {
         "Hello... I'm glad you could drop by today.",
         "Hi there... how are you today?",
         "Hello, how are you feeling today?",
@@ -75,7 +75,7 @@ var Responses = map[string][]string{
         "Is something troubling you?",
         "Hi there",
     },
-    `[Hh]i (.*)`: {
+    `Hi (.*)`: {
         "Hello... I'm glad you could drop by today.",
         "Hi there... how are you today?",
         "Hello, how are you feeling today?",
@@ -108,7 +108,7 @@ var Responses = map[string][]string{
         "Is something troubling you?",
         "Hi there",
     },
-    `[Ee]xit (.*)`: {
+    `Exit (.*)`: {
         "Goodbye. It was nice talking to you.",
         "Thank you for talking with me.",
         "Thank you, that will be $150. Have a good day!",
@@ -123,7 +123,7 @@ var Responses = map[string][]string{
         "It was a good session. Until next time. Goodbye.",
         "Maybe we can discuss more in our next session? Goodbye.",
     },
-    `[Qq]uit (.*)`: {
+    `Quit (.*)`: {
         "Goodbye. It was nice talking to you.",
         "Thank you for talking with me.",
         "Thank you, that will be $150. Have a good day!",
@@ -138,7 +138,7 @@ var Responses = map[string][]string{
         "It was a good session. Until next time. Goodbye.",
         "Maybe we can discuss more in our next session? Goodbye.",
     },
-    `[Ss]ee ya (.*)`: {
+    `See ya (.*)`: {
         "Goodbye. It was nice talking to you.",
         "Thank you for talking with me.",
         "Thank you, that will be $150. Have a good day!",
@@ -153,7 +153,7 @@ var Responses = map[string][]string{
         "It was a good session. Until next time. Goodbye.",
         "Maybe we can discuss more in our next session? Goodbye.",
     },
-    `[Cc]ya (.*)`: {
+    `Cya (.*)`: {
         "Goodbye. It was nice talking to you.",
         "Thank you for talking with me.",
         "Thank you, that will be $150. Have a good day!",
@@ -168,7 +168,7 @@ var Responses = map[string][]string{
         "It was a good session. Until next time. Goodbye.",
         "Maybe we can discuss more in our next session? Goodbye.",
     },
-    `[Bb]ye (.*)`: {
+    `Bye (.*)`: {
         "Goodbye. It was nice talking to you.",
         "Thank you for talking with me.",
         "Thank you, that will be $150. Have a good day!",
@@ -183,7 +183,7 @@ var Responses = map[string][]string{
         "It was a good session. Until next time. Goodbye.",
         "Maybe we can discuss more in our next session? Goodbye.",
     },
-    `[Gg]oodbye (.*)`: {
+    `Goodbye (.*)`: {
         "Goodbye. It was nice talking to you.",
         "Thank you for talking with me.",
         "Thank you, that will be $150. Have a good day!",
@@ -198,38 +198,38 @@ var Responses = map[string][]string{
         "It was a good session. Until next time. Goodbye.",
         "Maybe we can discuss more in our next session? Goodbye.",
     },
-    `[Ii] need (.*)`: {
+    `I need (.*)`: {
         "Why do you need %s?",
         "Would it really help you to get %s?",
         "Are you sure you need %s?",
         "Do you always need %s?",
     },
-    `[Ww]hy don't you (.*)`: {
+    `Why don't you (.*)`: {
         "Do you really think I don't %s?",
         "How do you know I don't %s?",
         "Maybe I will eventually %s.",
         "Do you want me to %s?",    
     },
-    `[Ii] don'?t (.*)`: {        
+    `I don'?t (.*)`: {        
         "Why don't you %s?",
         "Do you wish to be able to %s?",
         "Does it bother you that you don't %s?",
         "Do you want to %s?",
     },
-    `[Ww]hy can'?t I (.*)`: {
+    `Why can'?t I (.*)`: {
         "Do you think you should be able to %s?",
         "If you could %s, what would you do?",
         "Are you sure you really can't %s?",
         "Have you really tried to %s?",
     },
-    `[Ii] remember (.*)`:{
+    `I remember (.*)`:{
         "Do you often think of %s?",
         "Does thinking of %s bring anything else to mind?",
         "Does thinking of %s bring back memories?",
         "Why do you remember %s just now?",
         "What else does %s remind you of?",
     },
-    `[Ii] can'?t (.*)`: {
+    `I can'?t (.*)`: {
         "How do you know you can't %s?",
         "Perhaps you could %s if you tried.",
         "Did you really try to %s?",
@@ -238,7 +238,7 @@ var Responses = map[string][]string{
         "Are you unable to %s for serious reasons?",
         "Is your lack of posibilities preventing you from %s?",
     },
-    `[Ii] am (.*)`: {
+    `I am (.*)`: {
         "Did you come to me because you are %s?",
         "How long have you been %s?",
         "How do you feel about being %s?",
@@ -254,14 +254,14 @@ var Responses = map[string][]string{
         "Do you wish I would tell you you are %s?",
         "What would it mean if you were %s?",
     },
-    `[Ii]'?m (.*)`: {
+    `I'?m (.*)`: {
         "How does being %s make you feel?",
         "Do you enjoy being %s?",
         "Why are you telling me that you're %s?",
         "Why do you think you're %s?",
         "Is there a reason you are %s?",
     },
-    `[Ww]hat (.*)`: {
+    `What (.*)`: {
         "Why do you ask?",
         "How would an answer to that help you?",
         "What do you think?",
@@ -273,14 +273,14 @@ var Responses = map[string][]string{
         "We're here to talk about your own problems. Are you feeling troubled?",
         "No need to talk about myself. I'm just a robot, there isn't much to say about myself. Do you need to talk about something?",
     },
-    `[Bb]ecause (.*)`: {
+    `Because (.*)`: {
         "Is that the real reason?",
         "What other reasons come to mind?",
         "Does that reason apply to anything else?",
         "If %s is the reason why then why do you need my help?",
         "Does %s make you feel good about yourself?",
     },
-    `[Ss]orry (.*)`: {
+    `Sorry (.*)`: {
         "Please don't apologize.",
         "Apologies are not necessary for %s.",
         "I've told you that apologies are not required.",
@@ -289,7 +289,7 @@ var Responses = map[string][]string{
         "There is nothing to worry about",
         "There is no need to apologize.",
     },
-    `Aa]pologize (.*)`: {
+    `Apologize (.*)`: {
         "Please don't apologize.",
         "Apologies are not necessary for %s.",
         "I've told you that apologies are not required.",
@@ -298,7 +298,7 @@ var Responses = map[string][]string{
         "There is nothing to worry about",
         "There is no need to apologize.",
     },
-    `[Tt]hanks`: {
+    `Thanks`: {
         "You're welcome!",
         "Anytime!",
         "You are very welcome!",
@@ -306,7 +306,7 @@ var Responses = map[string][]string{
         "Any help I can give.",
         "I'm glad I could help.",
     },
-    `[Tt]hank you`: {
+    `Thank you`: {
         "You're welcome!",
         "Anytime!",
         "You are very welcome!",
@@ -314,17 +314,17 @@ var Responses = map[string][]string{
         "Any help I can give.",
         "I'm glad I could help.",
     },
-    `[Gg]ood morning`: {
+    `Good morning`: {
         "Good morning... I'm glad you could drop by today.",
         "Good morning... how are you today?",
         "Good morning, how are you feeling today?",
     },
-    `[Gg]ood afternoon(.*)`: {
+    `Good afternoon(.*)`: {
         "Good afternoon... I'm glad you could drop by today.",
         "Good afternoon... how are you today?",
         "Good afternoon, how are you feeling today?",
     },
-    `[Ii] think (.*)`: {
+    `I think (.*)`: {
         "Do you doubt %s?",
         "Do you really think so?",
         "But you're not sure %s?",
@@ -333,25 +333,25 @@ var Responses = map[string][]string{
         "Is the thought of %s troubling you?",
         "Do you think much about %s?",
     },
-    `[Ff]riend`: {
+    `Friend`: {
         "Tell me more about your friends.",
         "When you think of a friend, what comes to mind?",
         "Why don't you tell me about a childhood friend?",
     },
-    `[Yy]es`: {
+    `Yes`: {
         "You seem quite sure.",
         "OK, but can you elaborate a bit?",
         "You're quite positive.",
         "Can you expand on that?",
     },
-    `[Nn]o`: {
+    `No`: {
         "You don't seem positive now.",
         "Why not?",
         "Is there a reason?",
         "Can you explain?",
         "Can you expand on that?",
     },
-    `(.*)[Cc]omputer`: {
+    `(.*)Computer`: {
         "Are you talking about me?",
         "Does it seem strange to talk to a computer?",
         "How do computers make you feel?",
@@ -364,25 +364,25 @@ var Responses = map[string][]string{
         "What do you think about machines?",
         "You don't think I am a computer program, do you?",
     },
-    `[Ii]s it (.*)`: {
+    `Is it (.*)`: {
         "Do you think it is %s?",        
         "Perhaps it's %s. what do you think?",        
         "If it were %s, what would you do?",
         "It could well be that %s.",
     },
-    `[Ii]t is (.*)`: {
+    `It is (.*)`: {
         "You seem very certain.",
         "Are you sure it is %s?",
         "What if it isn't %s?",
         "If I told you that it probably isn't %s, what would you feel?",
     },
-    `[Cc]an you (/*)?`: {
+    `Can you (.*)?`: {
         "What makes you think I can't %s?",
         "What would happen if I could %s?",
         "Why are yo asking if I can %s?",
         "Are you really curious about that?",
     },
-    `(.*)[Dd]ream(.*)`: {
+    `Dream(.*)`: {
         "Tell me more about your dream.",
         "Really?",
         "Have you ever thought about %s when awake?",
@@ -393,7 +393,7 @@ var Responses = map[string][]string{
         "Do you believe that this dream has something to do with your problem?", 
         "What if this dream is related to what is troubling you?",       
     },
-    `[Cc]an [Ii] (.*)`: {
+    `Can I (.*)`: {
         "Perhaps you don't want to %s.",
         "I don't know now, can you %s?",
         "Do you want to be able to %s?",
@@ -406,7 +406,7 @@ var Responses = map[string][]string{
         "Don't you know?",
         "How likely, would you estimate?",
     },
-    `[Cc]an'?t (.*)`: {
+    `Can'?t (.*)`: {
         "How do you know you can't %s?",
         "Have you tried?",
         "Perhaps you could %s now.",
@@ -414,21 +414,21 @@ var Responses = map[string][]string{
         "Do you really want to be able to %s?",
         "What if you could %s?",
     },
-    `[Pp]erhaps (.*)`: {
+    `Perhaps (.*)`: {
         "You don't seem quite certain about %s.",
         "Why the uncertain tone?",
         "Can't you be more positive?",
         "You don't seem too sure about %s?",
         "How likely, would you estimate %s?",
     },
-    `[Mm]aybe (.*)`: {
+    `Maybe (.*)`: {
         "You don't seem quite certain about %s.",
         "Why the uncertain tone?",
         "Can't you be more positive?",
         "You don't seem too sure about %s?",
         "How likely, would you estimate %s?",
     },
-    `[Yy]ou are (.*)`: {
+    `You are (.*)`: {
         "Why do you think I am %s?",
         "Perhaps you would like me to be %s.",
         "Perhaps you're really talking about yourself?",
@@ -436,7 +436,7 @@ var Responses = map[string][]string{
         "Why do you think I am %s?",
         "Are we talking about you, or me?",
     },
-    `[Yy]ou'?re (.*)`: {
+    `You'?re (.*)`: {
         "Why do you think I am %s?",
         "Perhaps you would like me to be %s.",
         "Perhaps you're really talking about yourself?",
@@ -460,7 +460,7 @@ var Responses = map[string][]string{
         "Possibly they are %s.",
         "Are you positive they are %s?",
     },
-    `[Ii] feel (.*)`: {
+    `I feel (.*)`: {
         "Good, tell me more about these feelings.",
         "Do you often feel %s?",
         "Why do you feel %s?",
@@ -468,18 +468,18 @@ var Responses = map[string][]string{
         "When do you usually feel %s?",
         "When you feel %s, what do you do?",
     },
-    `[Ii] have (.*)`: {
+    `I have (.*)`: {
         "Why do you tell me that you've %s?",
         "Have you really %s?",
         "Now that you have %s, what will you do next?",
     },
-    `[Ii] would (.*)`: {
+    `I would (.*)`: {
         "Why would you %s?",
         "Who else knows that you would %s?",
         "Is there a particular reason you would %s?",
         "If you would then why don't you %s?",
     },
-    `[Ii]s there (.*)`: {
+    `Is there (.*)`: {
         "Do you think there is %s?",
         "It's likely that there is %s as much as it is not likely.",
         "Would you like there to be %s?",
@@ -496,13 +496,13 @@ var Responses = map[string][]string{
         "Why do you say that about me?",
         "Why do you care whether I %s?",
     },
-    `[Ii] want (.*)`: {
+    `I want (.*)`: {
         "What would it mean to you if you got %s?",
         "Why do you want %s?",
         "What would you do if you got %s?",
         "If you got %s, then what would you do?",
     },
-    `[Mm]other (.*)`: {
+    `Mother (.*)`: {
         "Tell me more about your mother.",
         "What was your relationship with your mother like?",
         "How did your mother make you feel?",
@@ -513,7 +513,7 @@ var Responses = map[string][]string{
         "Do you have trouble showing affection with your family?",
         "Good family relations are important.",
     },
-    `[Ff]ather (.*)`: {
+    `Father (.*)`: {
         "Tell me more about your father.",
         "What was your relationship with your father like?",
         "How did your father make you feel?",
@@ -524,7 +524,7 @@ var Responses = map[string][]string{
         "Do you have trouble showing affection with your family?",
         "Good family relations are important.",
     },
-    `(.*)\b[Cc]hild`: {
+    `(.*)\bchild`: {
         "Did you have a close friends as a child?",
         "What is your favorite childhood memory?",
         "Do you remember any dreams or nightmares from childhood?",
@@ -568,17 +568,16 @@ var Default = []string{
 }
 
 var Reflected = map[string]string{    
-	// Synonyms
-	"\bi\b": "I",
-	"[Ii]'m": "[Ii] am",
+// Synonyms
+	"I'm": "I am",
 	"you're": "you are",
-	"[Ii]'ll": "[Ii] will",    
+	"I'll": "I will",    
 	"you'll": "you will",    
-	"[Ii]'d": "[Ii] would",    
+	"I'd": "I would",    
 	"you'd": "you would",    
-	"[Ii]'ve": "[Ii] have",
+	"I've": "I have",
 	"you've": "you have",    
-	"[Ii]'ve had": "[Ii] have had",
+	"I've had": "I have had",
 	"cant": "can't",
 	"dont": "don't",
 	"wont": "won't",
@@ -587,7 +586,7 @@ var Reflected = map[string]string{
 	"wouldnt": "wouldn't",
 
 	// Subject Pronouns
-	"[Ii]": "you",
+	"I": "you",
 	"he": "she",
 	"she": "he",
 
@@ -622,19 +621,17 @@ var Reflected = map[string]string{
 
 	// To Will
 		// Present    
-	"[Ii] will": "you will",
+	"I will": "you will",
 	"you will": "I will",
 		// Past
-	"[Ii] would": "you would",
+	"I would": "you would",
 	"you' would": "I would",
 
 
 	// To Have
 		// Present
-	"[Ii] have": "you have",
+	"I have": "you have",
 	"you have": "I have",
 		// Past
-	"[Ii] have had": "you've had",    
-
-
+	"I have had": "you've had",    
 }
