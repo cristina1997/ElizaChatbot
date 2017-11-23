@@ -1,5 +1,5 @@
-// Creates constants for #list and #form id attributes from index
-const list = $("#list");
+// Creates constants for #answerList and #form id attributes from index
+const answerList = $("#answerList");
 const userInput = $("#userInput")
 
 $(
@@ -17,11 +17,11 @@ userInput.keypress(function(event){
             return
         }
         
-        list.append('<li class="left">' + text + '</li>');
+        answerList.append('<li class="left list-group-item list-group-item-primary"><strong>You:</strong> ' + text + '</li>');
 
         $.get("/chat/", {input: text})
         .done(function(w){ // "w" is the response from server
-            list.append('<li class="right">' + w + '</li>');
+            answerList.append('<li class="right list-group-item"><strong>Eliza:</strong> ' + w + '</li>');
         }).fail(function(){ // it runs in case of an error (i.e. if the server isn't running)
             alert("Sorry! Eliza is not here. Please come back later!");
         });
@@ -29,3 +29,4 @@ userInput.keypress(function(event){
         return
     }
 }));
+
