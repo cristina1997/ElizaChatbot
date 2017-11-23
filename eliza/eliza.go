@@ -2,11 +2,11 @@ package eliza
 
 // Code adapted from https://github.com/kennysong/goeliza
 import (
-    "fmt"
-    "math/rand"
-    "regexp"
-    "strings"
-    "time"
+	"fmt"
+	"math/rand"
+	"regexp"
+	"strings"
+	"time"
 )
 
 type Response struct {
@@ -16,7 +16,7 @@ type Response struct {
 
 func checkError(e error) {
     if e != nil {
-         panic(e)
+        panic(e)
     }
 }
 
