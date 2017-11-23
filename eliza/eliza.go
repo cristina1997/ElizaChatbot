@@ -1,14 +1,12 @@
 package eliza
-//Code: https://getbootstrap.com/docs/4.0/components/forms/
-//Take from form: https://stackoverflow.com/questions/23282311/parse-input-from-html-form-in-golang
-			// https://www.google.ie/search?q=parse+input+in+go+html&rlz=1C1GGRV_enIE769IE769&oq=parse+input+in+go+html&aqs=chrome..69i57.6111j0j4&sourceid=chrome&ie=UTF-8
+
+// Code adapted from https://github.com/kennysong/goeliza
 import (
     "fmt"
     "math/rand"
     "regexp"
     "strings"
     "time"
-	
 )
 
 type Response struct {
@@ -16,10 +14,11 @@ type Response struct {
 	answers []string
 }
 
-// func checkError(e error) {
-//     if e != nil {
-//         panic(e)
-// }
+func checkError(e error) {
+    if e != nil {
+         panic(e)
+    }
+}
 
 // Returns a random greeting for Eliza
 func ElizaHi() string{
@@ -51,7 +50,8 @@ func Ask(statement string) string {
             // The statement was matched then get the first match.
             // The matched regex group will match a captured fragment 
             // That captured fragment will then become part of the response
-            var capture string
+            capture := ""
+
             if len(matches) > 1 {
                 capture = split(matches[1])
             }
@@ -59,6 +59,9 @@ func Ask(statement string) string {
             // Choose a random response from the Responses array in replies.go
             response := random(responses)
 
+            // If the slice of strings in response contains "%s" then it returns true which means the if statement can execute 
+            // and place the captured response from the user to the response received from eliza
+            // thus creating a sentence
             if strings.Contains(response, "%s") {
                 response = fmt.Sprintf(response, capture)
             }
@@ -119,7 +122,7 @@ func random(list []string) string {
 func split(match string) string{
     
     // Split is used to break up strings into a list of substrings
-    words := strings.Split(match, " ")
+    words := strings.Split(match, `([^\.?!]*)`)
     for i, word := range words {
         if reflectedWord, ok := Reflected[word]; ok {
             words[i] = reflectedWord
