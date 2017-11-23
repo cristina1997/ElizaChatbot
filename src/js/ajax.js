@@ -23,7 +23,7 @@ userInput.keypress(function(event){
         .done(function(w){ // "w" is the response from server
             list.append('<li class="right">' + w + '</li>');
         }).fail(function(){ // it runs in case of an error (i.e. if the server isn't running)
-            list.append("<li>Sorry! Eliza is not here. Please come back later!</li>");
+            alert("Sorry! Eliza is not here. Please come back later!");
         });
     } else if (event.keyCode != 13){
         return

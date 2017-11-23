@@ -5,13 +5,14 @@ h1 {
 .right {
     float: right;
     background-color:lightblue;
-    clear: both;
-    display: block;
 }
 
 .left {
     float: left;
-    background-color:white;
-    clear: both;
+    background-color:white;  
+}
+
+li {
     display: block;
+    padding: 10px;
 }
